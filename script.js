@@ -12,3 +12,7 @@ button.onclick = function() {
     let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
     mylabel.textContent = randomNum;
 }
+
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
